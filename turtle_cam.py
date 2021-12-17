@@ -14,8 +14,9 @@ def callback(data):
     key=cv.waitKey(1)
     cap = brige.imgmsg_to_cv2(data,'bgr8')
     cv.resize(cap,(320,240))
-    cv.imshow('turtle_cam',cv.rotate(cap,cv.ROTATE_180))
-  
+    cv.imshow('turtle_cam',cap)
+    if key==ord('q'):
+        cv.destroyAllWindows()
     # cv.imshow('turtle_cam',cv_image)
 
 
