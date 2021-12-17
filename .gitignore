@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# user ignore
+.vscode/launch.json
+# .vscode/* all folder
